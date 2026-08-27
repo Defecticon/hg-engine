@@ -51,7 +51,7 @@ void LONG_CALL CreateStarter_CreateMon(struct PartyPokemon *mon, int species, in
     }
 
     space_for_setmondata = form;
-    PokeParaSet(mon, species, 5, 32, FALSE, 0, 0, 0);
+    PokeParaSet(mon, species, 10, 32, FALSE, 0, 0, 0);
     space_for_setmondata = 0;
 
     if (form != 0) {
