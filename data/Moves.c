@@ -24921,6 +24921,7 @@ const MoveSourceEntry sMoveSource[NUM_OF_MOVES + 1] = {
         },
         .description = "The user pours toxins\\ninto the target through\\na corrosive chain. This\\nmay also leave the\\ntarget badly poisoned.",
     },
+
     [MOVE_METAL_BASH] = {
         .names = {
             .name = "Metal Bash",
