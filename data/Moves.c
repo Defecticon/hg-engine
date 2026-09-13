@@ -24921,6 +24921,32 @@ const MoveSourceEntry sMoveSource[NUM_OF_MOVES + 1] = {
         },
         .description = "The user pours toxins\\ninto the target through\\na corrosive chain. This\\nmay also leave the\\ntarget badly poisoned.",
     },
+    [MOVE_METAL_BASH] = {
+        .names = {
+            .name = "Metal Bash",
+            .capsName = "METAL BASH",
+            .fullName = "Metal Bash",
+        },
+        .data = {
+            .effect = MOVE_EFFECT_HIT,
+            .split = SPLIT_PHYSICAL,
+            .power = 40,
+            .type = TYPE_STEEL,
+            .accuracy = 100,
+            .pp = 35,
+            .effectChance = 0,
+        },
+        .battle = {
+            .target = RANGE_SINGLE_TARGET,
+            .priority = 0,
+            .flags = FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT,
+        },
+        .contest = {
+            .appeal = APPEAL_BASIC,
+            .contestType = CONTEST_TOUGH,
+        },
+        .description = "A physical attack\\nin which the user\\ncharges and slams\\ninto the foe with\\nits whole body.",
+    },
 
     [NUM_OF_MOVES] = {
         .names = {
